@@ -1,9 +1,13 @@
-# -*- coding: utf-8 -*-
+import guzzle_sphinx_theme
 
-from __future__ import division, print_function, unicode_literals
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
 
-import os
-import sys
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append("guzzle_sphinx_theme")
 
-import sphinx_rtd_theme
-html_theme = "sphinx_rtd_theme"
+# Guzzle theme options (see theme.conf for more information)
+html_theme_options = {
+    # Set the name of the project to appear in the sidebar
+    "project_nav_name": "Chat 'n' Hook",
+}
