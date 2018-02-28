@@ -25,5 +25,5 @@ Content
    :caption: Demo
    :maxdepth: 2
 
-   demo/index
+   configuration/index
 
