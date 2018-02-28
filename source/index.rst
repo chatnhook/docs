@@ -8,12 +8,8 @@ Welcome to Chat 'n' Hook's documentation!!
 
 
 
-
-Content
-=======
-
 .. toctree::
-   :caption: Theme
+   :caption: Content
    :maxdepth: 2
 
    configuration/index
