@@ -6,15 +6,24 @@
 Welcome to Chat 'n' Hook's documentation!!
 =========================================
 
+
+
+
+Content
+=======
+
 .. toctree::
+   :caption: Theme
    :maxdepth: 2
-   :caption: Contents:
 
+   installing
+   configuring
+   changelog
+   contributing
 
+.. toctree::
+   :caption: Demo
+   :maxdepth: 2
 
-Indices and tables
-==================
+   demo/index
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
