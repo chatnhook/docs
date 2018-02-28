@@ -1,3 +1,6 @@
+html_theme = "sphinx_rtd_theme"
+
+'''
 import guzzle_sphinx_theme
 
 html_theme_path = guzzle_sphinx_theme.html_theme_path()
@@ -11,3 +14,4 @@ html_theme_options = {
     # Set the name of the project to appear in the sidebar
     "project_nav_name": "Chat 'n' Hook",
 }
+'''
