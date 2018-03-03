@@ -21,6 +21,7 @@ Welcome to Chat 'n' Hook's documentation!!
 .. toctree::
    :maxdepth: 3
 
+   requirements
    configuration/index
    services/index
    comms/index
