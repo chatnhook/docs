@@ -18,3 +18,7 @@ The configuration options should be self-explaining, if not, feel free to open a
 The ``services`` section allows to set global configuration for that service.
 For more details see :doc:`../services/index`.
 
+
+The ``hooks`` section is where is real fun begins.
+This holds all information that will send every webhook in to the right direction.
+
