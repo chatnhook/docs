@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Configuration &mdash; Chat &#39;n&#39; Hook  documentation</title>
+  <title>Webserver configuration &mdash; Chat &#39;n&#39; Hook  documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Chat &#39;n&#39; Hook  documentation" href="../index.html"/>
-        <link rel="next" title="Setting up the bot" href="setting-up-the-bot.html"/>
-        <link rel="prev" title="Welcome to Chat ‘n’ Hook’s documentation!!" href="../index.html"/> 
+        <link rel="up" title="Configuration" href="index.html"/>
+        <link rel="next" title="Service Configuration" href="../services/index.html"/>
+        <link rel="prev" title="Setting up the bot" href="setting-up-the-bot.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -88,11 +89,11 @@
             
               <p class="caption"><span class="caption-text">Content</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Configuration</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="setting-up-the-bot.html">Setting up the bot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="webserver-config.html">Webserver configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="webserver-config.html#nginx">NGINX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="webserver-config.html#apache2">Apache2</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Webserver configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nginx">NGINX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apache2">Apache2</a></li>
 </ul>
 </li>
 </ul>
@@ -173,13 +174,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Configuration</li>
+          <li><a href="index.html">Configuration</a> &raquo;</li>
+        
+      <li>Webserver configuration</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/configuration/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/configuration/webserver-config.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -192,18 +195,71 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="configuration">
-<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Service Config</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="setting-up-the-bot.html">Setting up the bot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="webserver-config.html">Webserver configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="webserver-config.html#nginx">NGINX</a></li>
-<li class="toctree-l2"><a class="reference internal" href="webserver-config.html#apache2">Apache2</a></li>
+  <div class="section" id="webserver-configuration">
+<h1>Webserver configuration<a class="headerlink" href="#webserver-configuration" title="Permalink to this headline">¶</a></h1>
+<p>Generally it’s advised to use a reverse proxy in front of the flask application.
+Below you can find configs for various webservers:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#nginx" id="id1">NGINX</a></li>
+<li><a class="reference internal" href="#apache2" id="id2">Apache2</a></li>
 </ul>
-</li>
-</ul>
+</div>
+<div class="section" id="nginx">
+<h2><a class="toc-backref" href="#id1">NGINX</a><a class="headerlink" href="#nginx" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>server {
+        listen 80;
+        listen [::]:80;
+
+        server_name your.bot.url;
+        location / {
+             proxy_pass  http://127.0.0.1:5000;
+             proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+             proxy_redirect off;
+             proxy_buffering off;
+             proxy_set_header        Host            $host;
+             proxy_set_header        X-Real-IP       $remote_addr;
+             proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+         }
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/your.bot.url/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/your.bot.url/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+
+    if ($scheme != &quot;https&quot;) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="apache2">
+<h2><a class="toc-backref" href="#id2">Apache2</a><a class="headerlink" href="#apache2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;IfModule mod_ssl.c&gt;
+&lt;VirtualHost *:443&gt;
+        #server information
+        ServerName your.bot.url
+        ServerAdmin webmaster@example.com
+
+        ProxyPreserveHost Off
+        ProxyPass / http://127.0.0.1:5000/
+        ProxyPassReverse / http://127.0.0.1:5000/
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        #SSL Settings Managed by certbot
+        SSLCertificateFile /etc/letsencrypt/live/your.bot.url/fullchain.pem
+        SSLCertificateKeyFile /etc/letsencrypt/live/your.bot.url/privkey.pem
+        Include /etc/letsencrypt/options-ssl-apache.conf
+&lt;/VirtualHost&gt;
+&lt;/IfModule&gt;
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -217,10 +273,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="setting-up-the-bot.html" class="btn btn-neutral float-right" title="Setting up the bot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../services/index.html" class="btn btn-neutral float-right" title="Service Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral" title="Welcome to Chat ‘n’ Hook’s documentation!!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="setting-up-the-bot.html" class="btn btn-neutral" title="Setting up the bot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
