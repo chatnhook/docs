@@ -3,7 +3,6 @@ Customization
 *************
 
 .. toctree::
-   :caption: Service Config
    :maxdepth: 2
 
    adding-a-com
