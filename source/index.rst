@@ -1,3 +1,7 @@
+*************
+Home
+*************
+
 .. Chat 'n' Hook documentation master file, created by
    sphinx-quickstart on Wed Feb 28 12:09:30 2018.
    You can adapt this file completely to your liking, but it should at least
@@ -9,7 +13,12 @@ Welcome to Chat 'n' Hook's documentation!!
 
 
 .. toctree::
-   :caption: Content
+   :caption: Menu
+   :maxdepth: 3
+   :hidden:
+
+   self
+.. toctree::
    :maxdepth: 3
 
    configuration/index
@@ -17,4 +26,3 @@ Welcome to Chat 'n' Hook's documentation!!
    comms/index
    customization/index
    help/index
-
