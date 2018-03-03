@@ -11,7 +11,7 @@ Then click on **Add webhook**.
 
 Under **Payload URL** enter the following: ``https://your.bot.url/github``.
 In this case the ``/github`` tells chat 'n' hook that the webhooks are coming from github.
-**Make sure you have ``/github`` on the end of your url**
+**Make sure you have** ``/github`` **on the end of your url**
 
 After you've set the Payload url, set **Content type** to ``application/json``.
 And if you like to protect your endpoint, you can enter a ``secret``.
