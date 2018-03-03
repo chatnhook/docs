@@ -10,6 +10,7 @@ A **event** is identified from the given webhook (like a push on Github, for exa
 
 A **comm** is then used to publish information from this hook in messaging services.
 
+A **project** is used to contain multiple configurations.
 
 .. toctree::
    :caption: Menu
