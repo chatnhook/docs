@@ -2,25 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac6f2140-cf93-4723-bdc9-9a12a4b5996c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/doctrees/configuration/setting-up-the-bot.doctree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/doctrees/configuration/webserver-config.doctree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/html/_sources/configuration/setting-up-the-bot.rst.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/html/_sources/configuration/webserver-config.rst.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/html/configuration/setting-up-the-bot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/html/configuration/webserver-config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/configuration/setting-up-the-bot.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/configuration/webserver-config.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/configuration/index.doctree" afterPath="$PROJECT_DIR$/build/doctrees/configuration/index.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/objects.inv" afterPath="$PROJECT_DIR$/build/html/objects.inv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/.gitkeep" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/comms/discord.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/comms/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/comms/mattermost.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/comms/slack.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/comms/telegram.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/configuration/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/configuration/setting-up-the-bot.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/configuration/webserver-config.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/customization/adding-a-com.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/customization/adding-a-event.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/customization/adding-a-service.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/customization/adding-telegram-command.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/customization/calling-custom-scripts.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/customization/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/help/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/help/troubleshooting.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/bitbucket.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/circleci.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/codacy.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/docker.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/github.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/index.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/patreon.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/scrutinizer.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/slack.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/telegram.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/doctrees/services/travisci.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/.buildinfo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/comms/discord.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/comms/index.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/comms/mattermost.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/comms/slack.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/comms/telegram.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/configuration/index.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/configuration/setting-up-the-bot.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/configuration/webserver-config.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/customization/adding-a-com.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/customization/adding-a-event.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/customization/adding-a-service.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/customization/adding-telegram-command.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/customization/calling-custom-scripts.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/customization/index.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/help/index.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/help/troubleshooting.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/bitbucket.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/circleci.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/codacy.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/docker.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/github.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/index.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/patreon.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/scrutinizer.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/slack.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/telegram.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_sources/services/travisci.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/alabaster.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/basic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/comment-bright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/comment-close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/css/badge_only.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/css/theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/doctools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/documentation_options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/down-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/file.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/Inconsolata-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/Inconsolata-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/Lato-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/Lato-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/RobotoSlab-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/RobotoSlab-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/jquery-3.2.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/js/modernizr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/js/theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/pygments.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/searchtools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/underscore-1.3.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/up-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/_static/websupport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/comms/discord.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/comms/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/comms/mattermost.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/comms/slack.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/comms/telegram.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/configuration/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/configuration/setting-up-the-bot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/configuration/webserver-config.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/customization/adding-a-com.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/customization/adding-a-event.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/customization/adding-a-service.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/customization/adding-telegram-command.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/customization/calling-custom-scripts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/customization/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/genindex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/help/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/help/troubleshooting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/objects.inv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/searchindex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/bitbucket.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/circleci.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/codacy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/docker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/github.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/patreon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/scrutinizer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/slack.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/telegram.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/html/services/travisci.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/configuration/index.rst.txt" afterPath="$PROJECT_DIR$/build/html/_sources/configuration/index.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/configuration/index.html" afterPath="$PROJECT_DIR$/build/html/configuration/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/genindex.html" afterPath="$PROJECT_DIR$/build/html/genindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/index.html" afterPath="$PROJECT_DIR$/build/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/search.html" afterPath="$PROJECT_DIR$/build/html/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/searchindex.js" afterPath="$PROJECT_DIR$/build/html/searchindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/configuration/index.rst" afterPath="$PROJECT_DIR$/source/configuration/index.rst" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,11 +177,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setting-up-the-bot.rst" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setting-up-the-bot.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/configuration/setting-up-the-bot.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitkeep" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/.gitkeep">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,6 +305,11 @@
             <path>
               <item name="hb-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="hb-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hb-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hb-doc" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,6 +390,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3200" y="0" width="1920" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -263,7 +400,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -536,6 +673,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
