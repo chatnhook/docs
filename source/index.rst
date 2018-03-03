@@ -10,7 +10,11 @@ Welcome to Chat 'n' Hook's documentation!!
 
 .. toctree::
    :caption: Content
-   :maxdepth: 2
+   :maxdepth: 3
 
    configuration/index
+   services/index
+   comms/index
+   customization/index
+   help/index
 

@@ -158,9 +158,13 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
+html_theme_options = {
+    'navigation_depth': 4,
+    'collapse_navigation': False
+}
 
 # -- Options for todo extension ----------------------------------------------
-
+theme_collapse_navigation = False
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
