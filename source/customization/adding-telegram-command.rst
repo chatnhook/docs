@@ -30,10 +30,11 @@ And a file called ``__init__.py`` wich is empty.
 Each command file needs to have 2 functions: **run** and **get_description**.   
 ``run()`` will be ran when the command is called and ``get_description()`` is called when the command ``/start`` is ran.   
  
-In the command class you have access to the following variables / functions
--  ``messageObj`` - Telegram message object, see below
-- ``self.send_message()``, ``self.send_document()``, ``self.send_photo()``  are aliases to the functions in ``self.telegram_bot``
-- ``self.telegram_bot``- is an instance of `python-telegram-bot <https://github.com/python-telegram-bot/python-telegram-bot>`_.
+In the command class you have access to the following variables / functions:
+
+* ``messageObj`` - Telegram message object, see below
+* ``self.send_message()``, ``self.send_document()``, ``self.send_photo()``  are aliases to the functions in ``self.telegram_bot``
+* ``self.telegram_bot``- is an instance of `python-telegram-bot <https://github.com/python-telegram-bot/python-telegram-bot>`_.
    
    
 ``messageObj`` is a telegram message object, which looks like the following:
