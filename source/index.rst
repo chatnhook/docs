@@ -19,7 +19,7 @@ A **project** is used to contain multiple configurations.
 
    Home <self>
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    requirements
    configuration/index
