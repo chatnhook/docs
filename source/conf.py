@@ -168,4 +168,4 @@ html_sidebars = {'**': ['localtoc.html', 'sourcelink.html', 'searchbox.html', 'p
 
 def setup(app):
   app.add_stylesheet('css/custom.css')  # may also be an URL
-  app.add_javascript('js/custom.js')
+  # app.add_javascript('js/custom.js')
