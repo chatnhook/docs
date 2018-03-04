@@ -23,7 +23,7 @@ Example config
 .. code-block:: yaml
 
   hooks:
-    some-project:
+    <project>:
       circleci:
         token: ''
         scripts:

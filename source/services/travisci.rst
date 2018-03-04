@@ -28,7 +28,7 @@ Example config
 .. code-block:: yaml
 
   hooks:
-    some-project:
+    <project>:
       docker:
         enabled: true
         scripts:

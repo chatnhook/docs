@@ -22,7 +22,7 @@ Example config
 .. code-block:: yaml
 
   hooks:
-    some-project:
+    <project>:
       scrutinizer:
         enabled: true
         events:

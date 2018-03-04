@@ -28,7 +28,7 @@ Example config
       token: 'xxxxxxxx'
 
   hooks:
-    some-project:
+    <project>:
       github:
         enabled: true
         secret: ''

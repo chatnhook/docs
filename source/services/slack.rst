@@ -24,7 +24,7 @@ Example config
 .. code-block:: yaml
 
   hooks:
-    some-project:
+    <project>:
       slack:
         token: "your_outgoing_hook_token"
         scripts:

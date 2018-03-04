@@ -17,7 +17,7 @@ Example config
 .. code-block:: yaml
 
   hooks:
-    some-project:
+    <project>:
       patreon:
         enabled: true
         scripts:
