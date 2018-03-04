@@ -11,7 +11,7 @@ Browse to the repository you want to add, and click on settings in the menu.
 |
 | Under **Payload URL** enter the following: ``https://your.bot.url/<project>/github``.
 | In this case the ``/github`` tells chat 'n' hook that the webhooks are coming from github.
-| The ``/<project>`` tells chat 'n' what project it is.
+| The ``/<project>`` tells chat 'n' hook what project it is.
 |
 | **Make sure you have** ``<project>/github`` **on the end of your url**
 
