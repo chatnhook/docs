@@ -6,22 +6,24 @@ Github
 
 Browse to the repository you want to add, and click on settings in the menu.
 
-In the left menu choose **Webhooks**.
-Then click on **Add webhook**.
+| In the left menu choose **Webhooks**.
+| Then click on **Add webhook**.
+|
+| Under **Payload URL** enter the following: ``https://your.bot.url/github``.
+| In this case the ``/github`` tells chat 'n' hook that the webhooks are coming from github.
+| The ``/<project>`` tells chat 'n' what project it is.
+|
+| **Make sure you have** ``/github`` **on the end of your url**
 
-Under **Payload URL** enter the following: ``https://your.bot.url/github``.
-In this case the ``/github`` tells chat 'n' hook that the webhooks are coming from github.
-**Make sure you have** ``/github`` **on the end of your url**
+| After you've set the Payload url, set **Content type** to ``application/json``.
+| And if you like to protect your endpoint, you can enter a ``secret``.
+| Make sure to enter it in the config too.
+|
+| Last and final: **Which events would you like to trigger this webhook?** select all events
+|
+| Last one, click **Add webhook**
 
-After you've set the Payload url, set **Content type** to ``application/json``.
-And if you like to protect your endpoint, you can enter a ``secret``.
-Make sure to enter it in the config too.
-
-Last and final: **Which events would you like to trigger this webhook?** select all events
-
-Last one, click **Add webhook**
-
-The github config looks like the following:
+ The github config looks like the following:
 
 
 .. code-block:: yaml
