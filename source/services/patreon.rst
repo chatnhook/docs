@@ -21,8 +21,6 @@ The patreon config looks like the following:
     some-project:
       patreon:
         enabled: true
-        secret: ''
-        token: ''
         scripts:
           pledges.create:
             - python /path/to/script.py
