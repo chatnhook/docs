@@ -7,7 +7,6 @@ jQuery(function(){
 
     function updatePage(new_project_name) {
       if (firstLoad) {
-        console.log('replace ', new_project_name);
         firstLoad = false;
         $(".wy-nav-content").html($(".wy-nav-content").html().replace(/&lt;project&gt;/g, new_project_name));
       } else {
@@ -42,8 +41,6 @@ jQuery(function(){
       $('#project_name').val(project_name);
       updatePage(project_name);
     }
-
-
   }
 
 });
