@@ -163,9 +163,9 @@ theme_collapse_navigation = False
 todo_include_todos = True
 
 
-html_sidebars = {'**': ['localtoc.html', 'sourcelink.html', 'searchbox.html', 'projectbox.html']}
+html_sidebars = {'**': ['localtoc.html', 'sourcelink.html', 'searchbox.html']}
 
 
 def setup(app):
   app.add_stylesheet('css/custom.css')  # may also be an URL
-  # app.add_javascript('js/custom.js')
+  app.add_javascript('js/custom.js')
