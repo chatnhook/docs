@@ -1,7 +1,7 @@
 .. image:: images/logo.png
 
 Welcome to Chat 'n' Hook's documentation!!
-=========================================
+===========================================
 
 
 A **service** represents any web service that sends a webhook.

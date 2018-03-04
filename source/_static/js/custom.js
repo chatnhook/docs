@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(function(){
   if (typeof(Storage) !== "undefined") {
     console.log('document ready!');
 
@@ -7,12 +7,12 @@ $(document).ready(function () {
 
     function updatePage(new_project_name) {
       if (firstLoad) {
-        console.log('replace');
+        console.log('replace ', new_project_name);
         firstLoad = false;
-        // $("body").html($("body").html().replace(/\<project\>/g, new_project_name));
+        $(".wy-nav-content").html($(".wy-nav-content").html().replace(/&lt;project&gt;/g, new_project_name));
       } else {
         var re = new RegExp(project_name, "g");
-        // $("body").html($("body").html().replace(re, new_project_name));
+        $("body").html($("body").html().replace(re, new_project_name));
       }
     }
 
@@ -34,12 +34,13 @@ $(document).ready(function () {
       '    </form>\n' +
       '    </div>\n' +
       '</div>';
-    $('div[role="search"]').append(html)
+    $('div[role="search"]').append(html);
 
-    if (localStorage.getItem('project_name')) {
-      project_name = localStorage.getItem('project_name');
+
+    project_name = localStorage.getItem('project_name');
+    if (project_name) {
       $('#project_name').val(project_name);
-      // updatePage(project_name);
+      updatePage(project_name);
     }
 
 
