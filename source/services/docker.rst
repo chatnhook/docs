@@ -17,7 +17,7 @@ The docker config looks like the following:
       docker:
         enabled: true
         scripts:
-          pledges.create:
+          push:
             - python /path/to/script.py
         send_to:
           telegram:
