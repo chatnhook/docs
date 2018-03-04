@@ -28,7 +28,6 @@ version = u''
 # The full version, including alpha/beta/rc tags
 release = u''
 
-
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -39,8 +38,8 @@ release = u''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.todo',
-    'sphinx.ext.viewcode',
+  'sphinx.ext.todo',
+  'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,13 +69,12 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = "sphinx_rtd_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -105,45 +103,42 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'ChatnHookdoc'
 
-
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+  # The paper size ('letterpaper' or 'a4paper').
+  #
+  # 'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
+  # The font size ('10pt', '11pt' or '12pt').
+  #
+  # 'pointsize': '10pt',
 
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
+  # Additional stuff for the LaTeX preamble.
+  #
+  # 'preamble': '',
 
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+  # Latex figure (float) alignment
+  #
+  # 'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'ChatnHook.tex', u'Chat \'n\' Hook Documentation',
-     u'brantje', 'manual'),
+  (master_doc, 'ChatnHook.tex', u'Chat \'n\' Hook Documentation',
+   u'brantje', 'manual'),
 ]
-
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'chatnhook', u'Chat \'n\' Hook Documentation',
-     [author], 1)
+  (master_doc, 'chatnhook', u'Chat \'n\' Hook Documentation',
+   [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -151,16 +146,15 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ChatnHook', u'Chat \'n\' Hook Documentation',
-     author, 'ChatnHook', 'One line description of project.',
-     'Miscellaneous'),
+  (master_doc, 'ChatnHook', u'Chat \'n\' Hook Documentation',
+   author, 'ChatnHook', 'One line description of project.',
+   'Miscellaneous'),
 ]
-
 
 # -- Extension configuration -------------------------------------------------
 html_theme_options = {
-    'navigation_depth': 4,
-    'collapse_navigation': False
+  'navigation_depth': 4,
+  'collapse_navigation': False
 }
 
 # -- Options for todo extension ----------------------------------------------
@@ -168,9 +162,10 @@ theme_collapse_navigation = False
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
-html_theme = "sphinx_rtd_theme"
+
 html_sidebars = {'**': ['localtoc.html', 'sourcelink.html', 'searchbox.html']}
 
+
 def setup(app):
-    app.add_stylesheet('css/custom.css')  # may also be an URL
+  app.add_stylesheet('css/custom.css')  # may also be an URL
 
