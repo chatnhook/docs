@@ -12,7 +12,7 @@ jQuery(function(){
         $(".wy-nav-content").html($(".wy-nav-content").html().replace(/&lt;project&gt;/g, new_project_name));
       } else {
         var re = new RegExp(project_name, "g");
-        $("body").html($("body").html().replace(re, new_project_name));
+        $(".wy-nav-content").html($(".wy-nav-content").html().replace(re, new_project_name));
       }
     }
 
