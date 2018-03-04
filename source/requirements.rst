@@ -1,6 +1,6 @@
-*************
+##################
 Requirements
-*************
+##################
 * Python 2.7 / 3
     * pip setuptools
     * pip wheel

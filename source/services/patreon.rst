@@ -1,6 +1,6 @@
-*************
+##################
 Patreon
-*************
+##################
 
 Go to here_.
 
@@ -8,12 +8,11 @@ In **Create a new webhook by pasting your URL here** enter the following: ``http
 
 | In this case the ``<project>/patreon`` tells chat 'n' hook that the webhooks are coming from patreon.
 | The ``/<project>`` tells chat 'n' what project it is.
+| **Make sure you have** ``/<project>/patreon`` **on the end of your url**
+|
 
-**Make sure you have** ``<project>/patreon`` **on the end of your url**
-
-The patreon config looks like the following:
-
-
+Example config
+----------------
 
 .. code-block:: yaml
 

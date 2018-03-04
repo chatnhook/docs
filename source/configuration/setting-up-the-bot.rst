@@ -1,6 +1,6 @@
-*************
+##################
 Setting up the bot
-*************
+##################
 
 Configuring this bot is simple.
 Copy ``config.example.yml`` to `config.yml`.

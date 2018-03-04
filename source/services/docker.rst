@@ -1,14 +1,19 @@
-*************
+##################
 Docker
-*************
+##################
 
-Login to the `Docker Hub <https://hub.docker.com/>`_.
-Pick the repo you want to add the webhook to.
-In the menu you see Webhooks, click on it.
-Enter a name and enter ``https://your.bot.url/<project>/docker`` as url.
-**Make sure you have** ``<project>/docker`` **on the end of your url**
+| Login to the `Docker Hub <https://hub.docker.com/>`_.
+| Pick the repo you want to add the webhook to.
+| In the menu you see Webhooks, click on it.
+| Enter a name and enter ``https://your.bot.url/<project>/docker`` as url.
+|
+| In this case the ``/docker`` tells chat 'n' hook that the webhooks are coming from Docker.
+| The ``/<project>`` tells chat 'n' hook what project it is.
+| **Make sure you have** ``/<project>/docker`` **on the end of your url**
+|
 
-The docker config looks like the following:
+Example config
+--------------
 
 .. code-block:: yaml
 

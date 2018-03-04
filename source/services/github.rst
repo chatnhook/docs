@@ -1,6 +1,6 @@
-*************
+##################
 Github
-*************
+##################
 
 .. image:: https://i.imgur.com/RRO7Wqo.png
 
@@ -13,7 +13,7 @@ Browse to the repository you want to add, and click on settings in the menu.
 | In this case the ``/github`` tells chat 'n' hook that the webhooks are coming from github.
 | The ``/<project>`` tells chat 'n' hook what project it is.
 |
-| **Make sure you have** ``<project>/github`` **on the end of your url**
+| **Make sure you have** ``/<project>/github`` **on the end of your url**
 
 | After you've set the Payload url, set **Content type** to ``application/json``.
 | And if you like to protect your endpoint, you can enter a ``secret``.
@@ -22,9 +22,10 @@ Browse to the repository you want to add, and click on settings in the menu.
 | Last and final: **Which events would you like to trigger this webhook?** select all events
 |
 | Last one, click **Add webhook**
+|
 
- The github config looks like the following:
-
+Example config
+--------------
 
 .. code-block:: yaml
 

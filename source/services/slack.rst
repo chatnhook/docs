@@ -1,6 +1,6 @@
-*************
+##################
 Slack
-*************
+##################
 
 Add the **Outgoing Webhooks** integration or click `here <https://my.slack.com/services/new/outgoing-webhook/>`_ to add it.
 
@@ -12,9 +12,14 @@ Use the following configuration under **Integration Settings**.
 | **Token**: Recommend to use prefilled token.
 |
 | The rest is entirely up to you to configure (label, name, picture, etc)
-| **Make sure you have** `/<project>/slack` **on the end of your url**
+|
+| In this case the ``/slack`` tells chat 'n' hook that the webhooks are coming from Slack.
+| The ``/<project>`` tells chat 'n' hook what project it is.
+| **Make sure you have** ``/<project>/slack`` **on the end of your url**
+|
 
-The slack config looks like the following:
+Example config
+--------------
 
 .. code-block:: yaml
 

@@ -1,6 +1,6 @@
-*************
+##################
 Bitbucket
-*************
+##################
 
 Browse to the repository you want to add, and click on settings in the menu.
 
@@ -18,8 +18,8 @@ Last and final: **Triggers** -> **Choose from a full list of triggers** and sele
 
 Last one, click **Save**
 
-The bitbucket config looks like the following:
-
+Example config
+--------------
 
 .. code-block:: yaml
 

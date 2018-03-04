@@ -1,6 +1,6 @@
-*************
+##################
 Webserver configuration
-*************
+##################
 
 Generally it's advised to use a reverse proxy in front of the flask application.
 Below you can find configs for various webservers:
@@ -9,7 +9,7 @@ Below you can find configs for various webservers:
 
 
 NGINX
-~~~~~~~~~~~~
+-----
 .. code-block:: none
 
     server {
@@ -42,7 +42,7 @@ NGINX
 
 
 Apache2
-~~~~~~~~~~~~
+-------
 .. code-block:: none
 
     <IfModule mod_ssl.c>
