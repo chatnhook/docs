@@ -3,7 +3,7 @@ Setting up the bot
 ##################
 
 Configuring this bot is simple.
-Copy ``config.example.yml`` to `config.yml`.
+Copy ``config.example.yml`` to ``config.yml``.
 
 After that edit the file, below more information is given.
 
