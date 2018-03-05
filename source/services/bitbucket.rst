@@ -67,4 +67,4 @@ Example config
               - 'https://discordapp.com/api/webhooks/xxxx/xxxxxxx'
 
 
-The `token` is used for api communication. You don't need to supply a token, but you will hit the rate limits of bitbucket quite fast.
+The ``token`` is used for api communication. You don't need to supply a token, but you will hit the rate limits of bitbucket quite fast.
