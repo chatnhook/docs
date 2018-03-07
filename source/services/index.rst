@@ -15,3 +15,4 @@ Service Configuration
    scrutinizer
    codacy
    telegram
+   zabbix
