@@ -25,9 +25,10 @@ If you found the ID you can copy the id and put it between the quotes at channel
 
 
 
-Example config
+Example global config
 -----------------
-
+If a service doesn't define a channel or token, then the global settings will be used.
+Meaning, you can have different bots for different services / channels.
 
 .. code-block:: yaml
 
