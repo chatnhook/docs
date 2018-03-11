@@ -27,6 +27,33 @@ NGINX
                  proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
                  proxy_set_header        X-Forwarded-Proto $scheme;
              }
+             
+            location ~* \.(ico|css|js|gif|jpeg|jpg|png|woff|ttf|otf|svg|woff2|eot)$ {
+                expires 1d;
+                access_log off;
+                add_header Pragma public;
+                add_header Cache-Control "public, max-age=86400";
+                add_header X-Asset "yes";
+                proxy_pass http://192.168.1.16:5000;
+                proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+                proxy_redirect off;
+                proxy_buffering off;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                gzip on;
+                gzip_disable "msie6";
+
+                gzip_vary on;
+                gzip_proxied any;
+                gzip_comp_level 5;
+                # gzip_buffers 16 8k;
+                gzip_http_version 1.1;
+                gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+            }
+
 
         listen 443 ssl; # managed by Certbot
         ssl_certificate /etc/letsencrypt/live/your.bot.url/fullchain.pem; # managed by Certbot
