@@ -51,6 +51,7 @@ Apache2
             #server information
             ServerName your.bot.url
             ServerAdmin webmaster@example.com
+            RequestHeader set X-Forwarded-Proto "https"
 
             ProxyPreserveHost Off
             ProxyPass / http://127.0.0.1:5000/
@@ -58,7 +59,7 @@ Apache2
 
             ErrorLog ${APACHE_LOG_DIR}/error.log
             CustomLog ${APACHE_LOG_DIR}/access.log combined
-
+    
             #SSL Settings Managed by certbot
             SSLCertificateFile /etc/letsencrypt/live/your.bot.url/fullchain.pem
             SSLCertificateKeyFile /etc/letsencrypt/live/your.bot.url/privkey.pem
