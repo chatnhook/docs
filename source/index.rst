@@ -26,6 +26,6 @@ A **project** is used to contain multiple configurations.
    services/index
    comms/index
    customization/index
+   webinterface/index
    help/index
 
-   
