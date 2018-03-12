@@ -15,6 +15,9 @@ Therefore Chat 'n' Hook requires you to configure the auth before you can access
 Specifying auth providers is done in the ``auth`` section of the ``config.yaml``.
 Below you can find some configuration examples for popular services.
 
+.. contents:: :local:
+
+
 Github authentication
 ----------------------
 To authorize users to Chat 'n' Hook, add their username to the ``allowed_users`  list.
