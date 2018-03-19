@@ -20,9 +20,15 @@ Below you can find some configuration examples for popular services.
 
 Github authentication
 ----------------------
-To authorize users to Chat 'n' Hook, add their username to the ``allowed_users`  list.
+To authorize users to Chat 'n' Hook, add their username to the ``allowed_users``  list.
 
-Todo: steps to obtain ``client_id`` & ``secret`` (+ config redirect url)
+To make use of the Github login please follow those steps:
+- Visit https://github.com/settings/applications/new
+- Name your application
+- Make sure the redirect url is `https://<bot_domain>.com/admin/login/github/authorized`
+- Click `Register application` 
+- Copy the ``client_id`` and ``client_secret`` to your config.yml
+
 
 .. code-block:: yaml
 
