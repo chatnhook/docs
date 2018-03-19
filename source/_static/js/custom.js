@@ -1,4 +1,5 @@
 jQuery(function(){
+  $('.ethical-rtd').remove();
   if (typeof(Storage) !== "undefined") {
     console.log('document ready!');
 
