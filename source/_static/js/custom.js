@@ -1,5 +1,9 @@
 jQuery(function(){
-  $('.ethical-rtd').remove();
+  setTimeout(function () {
+    console.log('rm -rf ads');
+    $('.ethical-rtd').remove();
+  }, 1500);
+
   if (typeof(Storage) !== "undefined") {
     console.log('document ready!');
 
